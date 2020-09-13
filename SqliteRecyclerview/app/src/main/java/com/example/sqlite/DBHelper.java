@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.Locale;
+
 public class DBHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
 
@@ -56,7 +58,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public boolean deleteOne(StudentVO studentVO){
         SQLiteDatabase db = this.getWritableDatabase();
-        String queryString = "delete from " + TB_STUDENT + " where " + COLUMN_ID + " = " + studentVO.getId();
+//        String queryString = "delete from " + TB_STUDENT + " where " + COLUMN_ID + " = " + studentVO.getId();
+//        String queryString = "delete from tb_student where _id = " + studentVO.getId();
+
+        String queryString = String.format(Locale.US, "delete from %s where %s = %d", TB_STUDENT, COLUMN_ID, studentVO.getId());
+
 
         Cursor cursor = db.rawQuery(queryString, null);
 
