@@ -1,11 +1,10 @@
 # Dagger practice
 
-Dagger 
- "+" test with Build Variants 
+Dagger
+ !+ test with Build Variants 
  
 
-
-
+----------------------------------------------------------
  1. cat, dog folder place
 
 	![cat, dog folder](./README_images/cat_dog_folder.png)
