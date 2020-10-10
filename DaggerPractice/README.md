@@ -1,7 +1,7 @@
 # Dagger practice
 
 Dagger
- !+ test with Build Variants 
+ plus "test with Build Variants"
  
 
 ----------------------------------------------------------
