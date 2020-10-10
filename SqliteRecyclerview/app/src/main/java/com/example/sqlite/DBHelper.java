@@ -5,6 +5,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import androidx.annotation.Nullable;
+
 import java.util.Locale;
 
 public class DBHelper extends SQLiteOpenHelper {
@@ -28,11 +30,22 @@ public class DBHelper extends SQLiteOpenHelper {
         // called once for the whole application life
 
         // Table create
-        String studentSql= "create table " + TB_STUDENT + " ( " + COLUMN_ID + " integer primary key autoincrement," +
-                COLUMN_NAME + " not null," +
-                COLUMN_EMAIL + "," +
-                COLUMN_PHONE + "," +
-                COLUMN_PHOTO + ")";
+//        String studentSql= "create table " + TB_STUDENT + " ( " + COLUMN_ID + " integer primary key autoincrement," +
+//                COLUMN_NAME + " not null," +
+//                COLUMN_EMAIL + "," +
+//                COLUMN_PHONE + "," +
+//                COLUMN_PHOTO + ")";
+
+        String studentSql = String.format(Locale.US,
+                "create table %s ('%s' integer primary key autoincrement, '%s' text not null, '%s' text, '%s' text, '%s' text)",
+                TB_STUDENT,
+                COLUMN_ID,
+                COLUMN_NAME,
+                COLUMN_EMAIL,
+                COLUMN_PHONE,
+                COLUMN_PHOTO
+                );
+
 
         String scoreSql = "create table " + TB_GRADE + " (" +
                 COLUMN_ID + " integer primary key autoincrement," +
@@ -62,19 +75,16 @@ public class DBHelper extends SQLiteOpenHelper {
 //        String queryString = "delete from tb_student where _id = " + studentVO.getId();
 
         String queryString = String.format(Locale.US, "delete from %s where %s = %d", TB_STUDENT, COLUMN_ID, studentVO.getId());
-
-
         Cursor cursor = db.rawQuery(queryString, null);
 
         if(cursor.moveToFirst()){
             cursor.close();
             db.close();
             return true;
-        }else{
-            cursor.close();
-            db.close();
-            return false;
         }
 
+        cursor.close();
+        db.close();
+        return false;
     }
 }
