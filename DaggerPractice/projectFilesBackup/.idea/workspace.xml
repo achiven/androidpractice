@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="포치" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="948d8613-78c4-415b-84b1-52a5c1c03c58" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_26" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DaggerPractice" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ifLN6f4aLk4sjMBPkGCNrBjDlp" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/dog" />
+    <property name="project.structure.last.edited" value="Build Variants" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.24873096" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="BUILD_VARIANTS_TAB" value="Flavors" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
+    <option name="LAST_EDITED_FLAVOR_OR_DIMENSION" value="dog" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/daggerpractice" />
+      <recent name="$PROJECT_DIR$/app/src/main/java" />
+      <recent name="$PROJECT_DIR$/app/src/cat" />
+      <recent name="$PROJECT_DIR$/app/src/main" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.daggerpractice" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.daggerpractice" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/dog" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="OwnerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.daggerpractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.daggerpractice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.daggerpractice.OwnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnerTest.getPetName" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.daggerpractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.daggerpractice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.daggerpractice.OwnerTest" />
+      <option name="METHOD_NAME" value="getPetName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleUnitTest and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="com.example.daggerpractice.ExampleUnitTest" />
+        <pattern testClass="com.example.daggerpractice.OwnerTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.OwnerTest.getPetName" />
+        <item itemvalue="Android JUnit.OwnerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="948d8613-78c4-415b-84b1-52a5c1c03c58" name="Default Changelist" comment="" />
+      <created>1602293656082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602293656082</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="593" y="260" key="#PSD" timestamp="1602355686308">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="593" y="260" key="#PSD/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602355686308" />
+    <state x="773" y="268" key="#com.intellij.ide.util.MemberChooser" timestamp="1602355753531">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="773" y="268" key="#com.intellij.ide.util.MemberChooser/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602355753531" />
+    <state x="723" y="418" width="473" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602357486835">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="723" y="418" width="473" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602357486835" />
+    <state x="698" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602355772071">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="698" y="305" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602355772071" />
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom" timestamp="1602363093874">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.bottom/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602363093874" />
+    <state width="1878" height="248" key="GridCell.Tab.0.center" timestamp="1602363093874">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.center/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602363093874" />
+    <state width="1878" height="248" key="GridCell.Tab.0.left" timestamp="1602363093873">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.left/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602363093873" />
+    <state width="1878" height="248" key="GridCell.Tab.0.right" timestamp="1602363093874">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="248" key="GridCell.Tab.0.right/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602363093874" />
+    <state x="331" y="245" key="SettingsEditor" timestamp="1602313611685">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="331" y="245" key="SettingsEditor/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602313611685" />
+    <state x="630" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1602359213400">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="630" y="384" key="com.intellij.ide.util.TipDialog/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602359213400" />
+    <state x="534" y="276" width="852" height="550" key="find.popup" timestamp="1602358500862">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="534" y="276" width="852" height="550" key="find.popup/-1920.66.1920.1057/0.23.1920.1057@0.23.1920.1057" timestamp="1602358500862" />
+  </component>
+</project>
