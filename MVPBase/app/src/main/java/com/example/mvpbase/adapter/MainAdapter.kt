@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.mvpbase.R
 import com.example.mvpbase.model.User
 import de.hdodenhof.circleimageview.CircleImageView
+import kotlinx.android.synthetic.main.item_person.view.*
 
 
 class MainAdapter : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
@@ -21,12 +22,6 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
     private lateinit var listener: OnItemClickListener
 
     class MyViewHolder(view : View) : RecyclerView.ViewHolder(view) {
-        var profile: CircleImageView = view.findViewById(R.id.iv_item_profile)
-        var name: TextView = view.findViewById(R.id.tv_item_name)
-        var phone: TextView = view.findViewById(R.id.tv_item_phone)
-        var mail: TextView = view.findViewById(R.id.tv_item_mail)
-        var like_cnt: TextView = view.findViewById(R.id.tv_item_like_cnt)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -76,12 +71,12 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
 
         Glide.with(holder.itemView.context)
             .load(user.picture.large)
-            .into(holder.profile)
+            .into(holder.itemView.iv_item_profile)
 
-        holder.name.text = user.getFullName()
-        holder.phone.text = user.phone
-        holder.mail.text = user.email
-        holder.like_cnt.text = user.getLikeCnt()
+        holder.itemView.tv_item_name.text = user.getFullName()
+        holder.itemView.tv_item_phone.text = user.phone
+        holder.itemView.tv_item_mail.text = user.email
+        holder.itemView.tv_item_like_cnt.text = user.getLikeCnt()
 
         holder.itemView.setOnClickListener(){
             listener.onClick(user)
