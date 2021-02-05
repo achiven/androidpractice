@@ -21,6 +21,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="getCountValue"
+        android:text="Toast count Value" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="onStartIntentService"
         android:text="Start IntentService" />
 
@@ -42,11 +48,6 @@
         android:onClick="onStopForeService"
         android:text="Foreground Service stop" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="getCountValue"
-        android:text="Toast count Value" />
 
 
 
