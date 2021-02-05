@@ -31,7 +31,11 @@ public class MyService extends Service {
     private Thread mThread;
     private int mCount = 0;
 
-    private MyBinder mService = new MyBinder();
+    // 이 변수와 관련된 코드는 무시 해도 됩니다.
+    // 하지만 특수한 케이스에 한하여, 이런식으로 서비스를 제어 할 수도 있다는 것을 보여주기 위해서 작성했습니다.
+    private boolean isReqStop = false;
+
+    private final IBinder mBinder = new MyBinder();
 
     public class MyBinder extends Binder{
         public MyService getService(){
@@ -64,14 +68,21 @@ public class MyService extends Service {
             mThread = new Thread("My Thread") {
                 @Override
                 public void run() {
-                    for (int i = 0; i < 5; i++) {
+                    for (int i = 0; i < 100; i++) {
                         mCount++;
+                        Log.d(TAG, "Service is running " + mCount);
+
                         try {
                             Thread.sleep(1000);
                         } catch (InterruptedException e) {
                             break;
                         }
-                        Log.d(TAG, "Service is running " + mCount);
+
+                        if (isReqStop){
+                            stopSelf();
+                            onDestroy();
+                            break;
+                        }
                     }
                 }
             };
@@ -93,12 +104,23 @@ public class MyService extends Service {
             mThread.interrupt();
             mThread = null;
             mCount = 0;
+            isReqStop = false;
         }
+    }
+
+    public void stopService(){
+        isReqStop = true;
+        stopSelf();
+        onDestroy();
     }
 
     @Override
     public IBinder onBind(Intent intent) {
-        return mService;
+        return mBinder;
+    }
+
+    public int getCount(){
+        return mCount;
     }
 
 
