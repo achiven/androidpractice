@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 import android.service.notification.StatusBarNotification;
@@ -30,6 +31,13 @@ public class MyService extends Service {
     private Thread mThread;
     private int mCount = 0;
 
+    private MyBinder mService = new MyBinder();
+
+    public class MyBinder extends Binder{
+        public MyService getService(){
+            return MyService.this;
+        }
+    }
 
     private boolean isForegroundService() {
         NotificationManager manager = getSystemService(NotificationManager.class);
@@ -90,8 +98,7 @@ public class MyService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+        return mService;
     }
 
 

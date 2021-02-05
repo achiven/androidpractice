@@ -13,6 +13,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private final String TAG = this.getClass().getSimpleName();
+    private MyIntentService myIntentService = new MyIntentService();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onStartIntentService(View view) {
         Intent intent = new Intent(this, MyIntentService.class);
+        intent.setAction("startForeground");
         startService(intent);
+    }
+
+    public void onStopIntentService(View view) {
+        stopService(new Intent(getApplicationContext(), MyIntentService.class));
     }
 
     public void onStartForeService(View view) {
@@ -55,6 +61,5 @@ public class MainActivity extends AppCompatActivity {
             startForegroundService(intent);
         }else
             startService(intent);
-
     }
 }

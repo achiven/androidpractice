@@ -27,6 +27,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onStopIntentService"
+        android:text="Stop IntentService" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="onStartForeService"
         android:text="Foreground Service start" />
 
@@ -35,5 +41,6 @@
         android:layout_height="wrap_content"
         android:onClick="onStopForeService"
         android:text="Foreground Service stop" />
+
 
 </LinearLayout>
