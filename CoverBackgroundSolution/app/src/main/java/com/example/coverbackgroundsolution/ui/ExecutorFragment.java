@@ -44,6 +44,6 @@ public class ExecutorFragment extends Fragment {
             binding.progress.setProgress(progressValue);
         });
 
-        binding.button.setOnClickListener(v -> viewModel.longTask());
+        binding.buttonStart.setOnClickListener(v -> viewModel.longTask());
     }
 }
