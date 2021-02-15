@@ -10,4 +10,8 @@
         android:name="com.example.coverbackgroundsolution.ui.ExecutorFragment"
         android:label="fragment_executor"
         tools:layout="@layout/fragment_executor" />
+    <fragment
+        android:id="@+id/jobFragment"
+        android:name="com.example.coverbackgroundsolution.ui.JobFragment"
+        android:label="JobFragment" />
 </navigation>
