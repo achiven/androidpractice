@@ -8,8 +8,8 @@ import android.os.Build;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
-import androidx.core.content.ContextCompat;
 import androidx.work.Data;
+import androidx.work.ForegroundInfo;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 
@@ -18,6 +18,7 @@ import com.example.coverbackgroundsolution.R;
 public class MyWorker extends Worker {
     private static final String CHANNEL_ID = "workermanager_channel";
     private NotificationManager notificationManager;
+    private final int NOTI_ID = 3;
 
     public MyWorker(@NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
@@ -28,6 +29,17 @@ public class MyWorker extends Worker {
     public Result doWork() {
         notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel();
+
+        Notification notification = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setContentTitle("WorkManager long task")
+                .setProgress(100, 0, false)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .build();
+
+
+        ForegroundInfo info = new ForegroundInfo(NOTI_ID, notification);
+        setForegroundAsync(info);       // It makes lasts longer than 1 minute.
 
         try {
             // background
@@ -78,7 +90,7 @@ public class MyWorker extends Worker {
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .build();
 
-        notificationManager.notify(3, notification);
+        notificationManager.notify(NOTI_ID, notification);
 
     }
 }
