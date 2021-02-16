@@ -14,4 +14,8 @@
         android:id="@+id/jobFragment"
         android:name="com.example.coverbackgroundsolution.ui.JobFragment"
         android:label="JobFragment" />
+    <fragment
+        android:id="@+id/workFragment"
+        android:name="com.example.coverbackgroundsolution.ui.WorkFragment"
+        android:label="WorkFragment" />
 </navigation>

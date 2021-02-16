@@ -16,9 +16,12 @@ import com.example.coverbackgroundsolution.R;
 
 public class JobService extends JobIntentService {
 
-//    NotificationManager notificationManager = getSystemService(NotificationManager.class);                // this style is available since version 23.
-//    NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);     // old style but still working
-//    private NotificationManager notificationManager = ContextCompat.getSystemService(this, NotificationManager.class);    // alternative
+    //    NotificationManager notificationManager = getSystemService(NotificationManager.class);                                 // this style is available since version 23.
+//    NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);            // old style but still working
+//    NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);    // alternative
+//    NotificationManager notificationManager = ContextCompat.getSystemService(this, NotificationManager.class);                 // alternative
+
+
     private NotificationManager notificationManager;
 
     private final String CHANNEL_ID = "JobIntentService_channel";
