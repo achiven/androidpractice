@@ -6,42 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/button_executor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Executor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:defaultNavHost="false"
-        app:layout_constraintBottom_toTopOf="@id/button_executor"
+        app:layout_constraintBottom_toTopOf="@id/button_javathd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_graph" />
 
     <Button
-        android:id="@+id/button_job"
+        android:id="@+id/button_javathd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Job"
+        android:layout_marginStart="16dp"
+        android:text="Executor"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintEnd_toStartOf="@+id/button_work"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
+
+
 
     <Button
         android:id="@+id/button_work"
@@ -49,9 +38,31 @@
         android:layout_height="wrap_content"
         android:text="Work"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_job"
-        app:layout_constraintStart_toEndOf="@+id/button_executor"
-        app:layout_constraintTop_toTopOf="@+id/button_executor"
+        app:layout_constraintEnd_toStartOf="@+id/button_service"
+        app:layout_constraintStart_toEndOf="@+id/button_javathd"
+        app:layout_constraintTop_toTopOf="@+id/button_javathd"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/button_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_job"
+        app:layout_constraintStart_toEndOf="@+id/button_work"
+        app:layout_constraintTop_toTopOf="@+id/button_javathd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Job"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_service"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
 </androidx.constraintlayout.widget.ConstraintLayout>

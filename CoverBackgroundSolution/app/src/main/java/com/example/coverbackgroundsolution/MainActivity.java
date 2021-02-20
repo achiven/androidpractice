@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 
-        binding.buttonExecutor.setOnClickListener(v -> navController.navigate(R.id.executorFragment));
+        binding.buttonJavathd.setOnClickListener(v -> navController.navigate(R.id.executorFragment));
         binding.buttonJob.setOnClickListener(v -> navController.navigate(R.id.jobFragment));
         binding.buttonWork.setOnClickListener(v -> navController.navigate(R.id.workFragment));
+        binding.buttonService.setOnClickListener(v -> navController.navigate(R.id.foregroundServiceFragment));
+
     }
 }
