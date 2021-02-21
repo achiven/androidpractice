@@ -18,8 +18,12 @@
         android:id="@+id/workFragment"
         android:name="com.example.coverbackgroundsolution.ui.WorkFragment"
         android:label="WorkFragment" />
+<!--    <fragment-->
+<!--        android:id="@+id/foregroundServiceFragment"-->
+<!--        android:name="com.example.coverbackgroundsolution.ui.ForegroundServiceFragment"-->
+<!--        android:label="ForegroundServiceFragment" />-->
     <fragment
         android:id="@+id/foregroundServiceFragment"
-        android:name="com.example.coverbackgroundsolution.ui.ForegroundServiceFragment"
+        android:name="com.example.coverbackgroundsolution.ui.ForeServiceFragmentKo"
         android:label="ForegroundServiceFragment" />
 </navigation>
