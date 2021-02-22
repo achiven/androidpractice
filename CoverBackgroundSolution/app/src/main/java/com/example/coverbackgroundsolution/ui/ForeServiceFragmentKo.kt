@@ -37,7 +37,7 @@ class ForeServiceFragmentKo : Fragment() {
             binding.progress.progress = v
         })
 
-        binding.buttonStart.setOnClickListener {
+        binding.buttonStartSvc.setOnClickListener {
             // 이제 여기서 retrofit 통신을 하면 된다. todo
             coroutineScope.launch {
 
@@ -58,5 +58,9 @@ class ForeServiceFragmentKo : Fragment() {
     override fun onDestroy() {
         super.onDestroy()
 //        job.cancel()
+    }
+
+    public fun example(){
+
     }
 }
