@@ -34,7 +34,7 @@ public class ForegroundServiceFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonStart.setOnClickListener(v -> {
+        binding.buttonStartSvc.setOnClickListener(v -> {
 //            requireActivity().startForegroundService(new Intent(requireContext(), ForegroundService.class));        // this style is available since version 23.
 
             ContextCompat.startForegroundService(                               // alternative for all version
