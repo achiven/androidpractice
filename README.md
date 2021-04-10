@@ -1,0 +1,2 @@
+# androidpractice
+Practices for android
