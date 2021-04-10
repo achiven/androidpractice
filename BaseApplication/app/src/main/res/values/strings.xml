@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BaseApplication</string>
+
+    <string name="http_404">"Can not find the organization</string>
+    <string name="http_403">"Limit the number of requests, please try again later"</string>
+    <string name="http_else_error">"Something went wrong, please try again later"</string>
+
+</resources>
