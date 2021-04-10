@@ -13,8 +13,8 @@ import com.example.coverbackgroundsolution.worker.MyWorker;
 
 public class WorkManagerViewModel extends AndroidViewModel {
 
-    private final WorkManager workManager;
-    private OneTimeWorkRequest request = new OneTimeWorkRequest
+    public final WorkManager workManager;
+    public OneTimeWorkRequest request = new OneTimeWorkRequest
             .Builder(MyWorker.class)
             .build();
 

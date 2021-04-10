@@ -39,5 +39,4 @@ class ForeServiceFragmentTest {
         onView(allOf(withText("ForeSVC Start"))).perform(click())
 
     }
-
 }

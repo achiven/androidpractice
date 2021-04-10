@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.work.WorkInfo;
 
 import com.example.coverbackgroundsolution.R;
 import com.example.coverbackgroundsolution.WorkManagerViewModel;
@@ -42,7 +43,14 @@ public class WorkFragment extends Fragment {
 
         viewModel.progressLiveData.observe(getViewLifecycleOwner(), workInfo -> {
             binding.progress.setProgress(workInfo.getProgress().getInt("progress", 0));
+
+            if(workInfo.getState() == WorkInfo.State.SUCCEEDED){
+                System.out.println("WorkFragment is done successfully!!");
+            }
         });
+
+
+
 
         binding.buttonStart.setOnClickListener(v -> viewModel.startLongTask());
     }
