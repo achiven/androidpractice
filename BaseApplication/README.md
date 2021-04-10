@@ -1,5 +1,5 @@
 BaseApplication
 
 
-Applied
-    Pagination, RecyclerView, OnRefreshListener, MVVM
+1. Applied
+    - Pagination, RecyclerView, OnRefreshListener, MVVM
